@@ -27,7 +27,7 @@ function Home(){
                         <div className="card">
                             <h1>Make your place a <span>better living</span></h1>
                             <p>Urban crafty furniture with modern, simple and elegant designs for your home.</p>
-                            <a href="home.html"><button>Buy Now</button></a>
+                            <a href="#"><button>Buy Now</button></a>
                         </div>
                         <div className="icons">
                             <i className="fa-brands fa-facebook"></i>
@@ -264,7 +264,7 @@ function Home(){
                             <form action="#" method="post">
                                 <input type="text" placeholder='Email' />
                                 <input type="password" placeholder='Email' />
-                                <button type="submit">Sign Up</button>
+                                <button type="button">Sign Up</button>
                             </form>
                         </div>
                     </div>
