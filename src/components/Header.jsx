@@ -8,7 +8,7 @@ function Header() {
     <header>
       <div className="logo" style={buttonStyle}>
         <h1>
-          <span>EcoChic</span> Haven
+          <span>EcoChic</span>
         </h1>
       </div>
       <div className="links">
