@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Rosarivo:regular,italic);
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+@import url(https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  user-select: none !important;;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+:root{
+  --primary-color-one: #c07d53;
+  --primary-color-two: #f1cbb1;
+  --primary-color-three: #fff6f1;
+  --primary-color-four: #fffbf6;
+  --secondary-color: #144e5a;
+  --tertiary-color: #ffbd5e;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color-four);
+  padding: 20px 10%;
+}
+header .links ul{
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+header .logo h1{
+  font-family: 'Abril Fatface', serif;
+  font-weight: lighter;
+  color: var(--secondary-color);
+
+}
+header .logo h1 span{
+  color: var(--primary-color-one);
+  font-family: 'Abril Fatface', serif;
+}
+header .links ul li a{
+  text-decoration: none;
+  color: var(--primary-color-one);
+  font-weight: 700;
+}
+header .button button{
+  padding: 10px 50px;
+  border: none;
+  background-color: var(--primary-color-one);
+  color: var(--primary-color-four);
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+footer{
+  margin-top: 20px;
+}
+footer .links{
+  background-color: var(--primary-color-four);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  border-bottom: solid 1px var(--primary-color-one);
+}
+footer .links .logo h1{
+  font-family: 'Abril Fatface', serif;
+  font-weight: lighter;
+  color: var(--secondary-color);
+}
+footer .links .logo h1 span{
+  color: var(--primary-color-one);
+  font-family: 'Abril Fatface', serif;
+}
+footer .links .link ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+footer .links .link ul li a{
+  text-decoration: none;
+  color: var(--primary-color-one);
+  font-weight: 700;
+}
+footer .copy{
+  background-color: var(--primary-color-four);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+}
+footer .copy .copyright h3{
+  color: var(--primary-color-one);
+}
+footer .copy .socials{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+footer .copy .socials .content{
+  display: flex;
+  gap: 1rem;
+}
+footer .copy .socials .content p{
+  font-size: 15px;
+  color: var(--primary-color-one);
+  font-weight: 600;
+}
+footer .copy .socials .content p:nth-child(2){
+  padding-left: 1rem;
+  border-left: dashed 2px var(--primary-color-one);
+}
+footer .copy .socials .icons{
+  display: flex;
+  gap: 1rem;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+#landing img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#landing{
+  position: relative;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+#landing .cards{
+  position: absolute;
+  padding: 0 10%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+#landing .cards .card{
+  padding: 5%;
+  -webkit-backdrop-filter: blur(35px);
+  backdrop-filter: blur(35px);
+  border-radius: 20px;
+  width: 50%;
+}
+#landing .cards .card h1{
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+#landing .cards .card h1 span{
+  font-weight: 900;
+  color: var(--tertiary-color);
+}
+#landing .cards .card p{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--primary-color-three);
+}
+#landing .cards .card button{
+  padding: 15px 60px;
+  margin-top: 20px;
+  background-color: var(--primary-color-one);
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-color-four);
+  font-size: 15px;
+  font-weight: 500;
+}
+#landing .cards .icons{
+  display: grid;
+  gap: 1rem;
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+#sponsors{
+  background-color: var(--primary-color-three);
+  padding: 20px 10%;
+}
+.title{
+  text-align: center;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  font-family: "Syne", sans-serif;
+}
+.title h1{
+  font-family: "Syne", sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+#sponsors .card{
+  display: flex;
+  justify-content: space-between;
+  font-size: 40px;
+  color: var(--primary-color-one);
+}
+#sponsors .card img{
+  width: 10%;
+  /* filter: grayscale(100%); */
+}
+
+#about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  align-items: center;
+  padding: 100px 10%;
+  overflow: hidden;
+}
+#about .text .about p{
+  font-weight: 600;
+  color: gray;
+}
+#about span{
+  color: var(--tertiary-color);
+}
+#about .images{
+  position: relative;
+  & img{
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+#about .images img:nth-child(2){
+  position: absolute;
+  width: 50%;
+  top: -30%;
+  right: -10%;
+  border:  solid 5px white;
+  aspect-ratio: .9;
+}
+#choose{
+  padding: 100px 10%;
+}
+#choose .cards, #clients .cards{
+  padding: 50px;
+}
+#choose .card, #clients .card{
+  box-shadow:  8px 8px 16px #e8e8e8,
+  -8px -8px 16px #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  & img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  & i{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+  }
+  & h2{
+    color: gray;
+    font-family: "Syne", sans-serif;
+  }
+  & p{
+    color: gray;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  & a{
+    display: flex;
+    text-decoration: none;
+    width: fit-content;
+    align-self: flex-end;
+    & button{
+      padding: 6px 15px;
+      border: solid 2px var(--primary-color-one);
+      background-color: transparent;
+      border-radius: 5px;
+      color: var(--primary-color-one);
+      font-weight: 600;
+      transition: 500ms ease-in-out;;
+      cursor: pointer;
+    }
+    & button:hover{
+      background-color: var(--primary-color-one);
+      color: var(--primary-color-four);
+    }
+  }
+}
+#products{
+  padding: 100px 10%;
+}
+#products .cards{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  & img{
+    width: 100%;
+    aspect-ratio: .9;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+#products .text{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  & .heading, & .subHead{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: gray;
+    & i{
+      color: var(--tertiary-color);
+    }
+  }
+  & p{
+    color: gray;
+  }
+  & a{
+    width: fit-content;
+    & button{
+      padding: 10px 30px;
+      border: none;
+      color: var(--primary-color-four);
+      background-color: var(--primary-color-one);
+      font-weight: 600;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 500ms ease-in-out;
+    }
+    & button:hover{
+      background-color: var(--tertiary-color);
+    }
+  }
+}
+#clients{
+  padding:  100px 10%;
+  & .card p{
+    font-weight: 400;
+  }
+  & .profile{
+    display: flex;
+    gap: 1rem;
+    & .header{
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      & i{
+        font-size: 1rem;
+        color: var(--tertiary-color);
+      }
+      & h3{
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      & h4{
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+#join{
+  padding: 100px 10%;
+  & video{
+    width: 100%;
+    aspect-ratio: 1.5;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  & .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+    & form{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      & input{
+        background-color: var(--primary-color-two);
+        border: none;
+        padding: 20px 15px;
+        border-radius: 3px;
+        outline: none;
+        font-size: 18px;
+        font-family: "Syne", sans-serif;
+        font-weight: bold;
+        color: gray;
+      }
+      & button{
+        width: fit-content;
+        padding: 15px 55px;
+        font-size: 18px;
+        font-family: "Syne", sans-serif;
+        cursor: pointer;
+        font-weight: bold;
+        background-color: var(--primary-color-one);
+        border: none;
+        color: var(--primary-color-four);
+        border-radius: 6px;
+      }
+    }
+  }
+}
